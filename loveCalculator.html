@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+        }
+        body{
+            background: #e8f8f5;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+            
+        }
+        .wrapper{
+            position: relative;
+        }
+        .wrapper .heading{
+            height: 25px;
+            width: 100%;
+            background-color: rebeccapurple;
+            text-align: center;
+            padding-top: 10px;
+            color :#fff;
+        }
+        .wrapper .main_box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% ,100%);
+            height: 200px;
+            width: 550px;
+            background-color: #fff;
+        }
+        .wrapper .main_box .text{
+             padding-top: 30px;
+             padding-left: 40px;
+             float: left;
+        }.wrapper .main_box .text .txt1{
+             margin-left: 95px;
+         
+        }
+        .wrapper .main_box .text button{
+            height: 35px;
+            width: 100px;
+            background-color:rebeccapurple ;
+            color: #fff;
+            border: 2px solid white;    
+            margin-top: 20px;
+            margin-left: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper"> 
+        <div class="main_box">
+            <div class="heading">Love Calculator</div>
+            <div class="text">
+                <h3 class="first">Enter your name : 
+                     <input class="txt1" type="text" id="input1"></h3>
+               <br>
+                <h3 class="second">Enter name you love most : 
+                      <input type="text" id="input2"></h3>
+                <button onclick="myfun()">Check</button>
+           
+            </div>
+            </div>
+    </div>
+    <script>
+        function myfun(){
+            var name1=document.getElementById('input1').value;
+            var name2=document.getElementById('input2').value;
+            
+            if(name1==" "){
+                alert("enter name");
+            }else if(name1.length<=2){
+                    alert("length should be more than 3 letter");
+            }else if(!isNaN(name1)){
+                    alert("number not allow");
+            }else if(name2==" "){
+                alert("enter name");
+            }else if(name2.length<=2){
+                    alert("length should be more than 3 letter");
+            }else if(!isNaN(name2)){
+                    alert("number not allow");
+            }else{     
+                var random = Math.floor(Math.random()*100);
+                alert(random);
+            }
+            
+
+        }
+    </script>
+</body>
+</html>
