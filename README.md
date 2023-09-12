@@ -1,2 +1,2 @@
 # FriendShip-Calculator
-Love Meter to Calculate Love Percentage - meter is an online love detector with which you can measure the percentage of love compatibility and chances of successful relationship between two people.
+The Friendship Calculator is a fun and interactive web application designed to entertain users by calculating the strength of their friendship with someone based on their names. Inspired by the nostalgic charm of friendship calculators that were once popular as pen-and-paper games, this digital version aims to bring back some of that nostalgic joy while offering a lighthearted experience.
